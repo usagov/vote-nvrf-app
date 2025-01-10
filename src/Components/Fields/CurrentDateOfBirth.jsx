@@ -18,7 +18,7 @@ function CurrentDateOfBirth(props) {
   return (
     stateField && <FieldsetContainer
       fieldType={'date'} inputData={{
-      id: 'date_of_birth',
+      id: field.nvrf_id,
       dataTest: 'dob',
       required: stateField.required,
       label: field.label,

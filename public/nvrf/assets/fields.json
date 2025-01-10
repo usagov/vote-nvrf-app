@@ -2,7 +2,7 @@
   {
     "uuid": "fd516f06-11bb-4c39-9080-735ed98100cc",
     "lang": "en",
-    "nvrf_id": "choice_of_party",
+    "nvrf_id": "party_choice",
     "name": "Choice of party",
     "label": "Enter the full name of the political party you wish to join or leave blank.",
     "help_text": false,
@@ -41,7 +41,7 @@
   {
     "uuid": "b7bdae35-e4be-4827-ae11-75d9c3e33bf0",
     "lang": "en",
-    "nvrf_id": "first_name",
+    "nvrf_id": "current_first_name",
     "name": "Current Legal Name: First Name",
     "label": "First name",
     "help_text": false,
@@ -54,7 +54,7 @@
   {
     "uuid": "b306238a-a0f6-4bb8-b8ea-b3216ca75e0b",
     "lang": "en",
-    "nvrf_id": "last_name",
+    "nvrf_id": "current_last_name",
     "name": "Current Legal Name: Last Name",
     "label": "Last name",
     "help_text": false,
@@ -67,7 +67,7 @@
   {
     "uuid": "38020ec6-1b53-4227-99e5-feea5f60af07",
     "lang": "en",
-    "nvrf_id": "middle_names",
+    "nvrf_id": "current_middle_names",
     "name": "Current Legal Name: Middle Name(s)",
     "label": "Middle name(s)",
     "help_text": "If you do not have a middle name, leave this field blank.",
@@ -80,7 +80,7 @@
   {
     "uuid": "eeff4fa1-00f2-474b-a791-1a4146dab11a",
     "lang": "en",
-    "nvrf_id": "suffix",
+    "nvrf_id": "current_suffix",
     "name": "Current Legal Name: Suffix",
     "label": "Suffix",
     "help_text": false,
@@ -114,7 +114,7 @@
   {
     "uuid": "86a544cd-cfe9-456a-b634-176a37a38d6d",
     "lang": "en",
-    "nvrf_id": "salutation",
+    "nvrf_id": "current_title",
     "name": "Current Legal Name: Title",
     "label": "Title",
     "help_text": false,
@@ -157,7 +157,7 @@
   {
     "uuid": "d31b2a64-36a9-4bc6-a9d1-e68d2be8c211",
     "lang": "en",
-    "nvrf_id": "dob",
+    "nvrf_id": "date_of_birth",
     "name": "Fieldset: Date of birth",
     "label": "Date of birth",
     "help_text": "MM/DD/YYYY",
@@ -209,7 +209,7 @@
   {
     "uuid": "deba9b54-68ad-4ef1-8fb5-ee34e4ab8a49",
     "lang": "en",
-    "nvrf_id": "apt_lot_number",
+    "nvrf_id": "current_apt_number",
     "name": "Home Address: Apt or Lot#",
     "label": "Apartment or lot#",
     "help_text": false,
@@ -222,7 +222,7 @@
   {
     "uuid": "7e39a528-7518-40cb-b7b6-b635864dc117",
     "lang": "en",
-    "nvrf_id": "city",
+    "nvrf_id": "current_city",
     "name": "Home Address: City",
     "label": "City",
     "help_text": false,
@@ -235,7 +235,7 @@
   {
     "uuid": "fe3a2a1d-34bd-472b-a843-3fa0635c4f40",
     "lang": "en",
-    "nvrf_id": "mail_state",
+    "nvrf_id": "current_state",
     "name": "Home Address: State",
     "label": "State",
     "help_text": false,
@@ -248,7 +248,7 @@
   {
     "uuid": "6dcb9e8c-b40a-4cda-ba5c-06b98c3375f4",
     "lang": "en",
-    "nvrf_id": "home_address",
+    "nvrf_id": "current_street_address",
     "name": "Home Address: Street Address",
     "label": "Street address",
     "help_text": "1234 Main St.",
@@ -261,7 +261,7 @@
   {
     "uuid": "cdb06542-0cbd-4aa3-897f-83377b8d65e5",
     "lang": "en",
-    "nvrf_id": "zip_code",
+    "nvrf_id": "current_zip_code",
     "name": "Home Address: ZIP",
     "label": "ZIP code",
     "help_text": "12345",
@@ -390,7 +390,7 @@
   {
     "uuid": "f6634a79-49af-47a4-8e86-d74ba5b892b9",
     "lang": "en",
-    "nvrf_id": "mail_apt_lot_number",
+    "nvrf_id": "mail_apt_number",
     "name": "Mailing Address: Apt or Lot#",
     "label": "Apartment or lot#",
     "help_text": false,
@@ -429,7 +429,7 @@
   {
     "uuid": "db9b1f7a-565b-4aad-8d7c-56a553c18326",
     "lang": "en",
-    "nvrf_id": "mail_address",
+    "nvrf_id": "mail_street_address",
     "name": "Mailing Address: Street Address",
     "label": "Street address",
     "help_text": false,
@@ -468,7 +468,7 @@
   {
     "uuid": "f282e541-7ca8-4c22-8d87-d4cff56e22e5",
     "lang": "en",
-    "nvrf_id": "first_name_2",
+    "nvrf_id": "prev_first_name",
     "name": "Name Before Legally Changed: First Name",
     "label": "First name",
     "help_text": false,
@@ -481,7 +481,7 @@
   {
     "uuid": "42de34cc-ebf3-4d8e-8873-2571063b62c0",
     "lang": "en",
-    "nvrf_id": "last_name_2",
+    "nvrf_id": "prev_last_name",
     "name": "Name Before Legally Changed: Last Name",
     "label": "Last name",
     "help_text": false,
@@ -494,7 +494,7 @@
   {
     "uuid": "a4919026-91ac-4e05-a75f-e2df479abd76",
     "lang": "en",
-    "nvrf_id": "middle_names_2",
+    "nvrf_id": "prev_middle_names",
     "name": "Name Before Legally Changed: Middle Name(s)",
     "label": "Middle name(s)",
     "help_text": "If you do not have a middle name, you may leave this field blank.",
@@ -507,7 +507,7 @@
   {
     "uuid": "09cb2989-d302-4a01-bb3a-33173adcffb2",
     "lang": "en",
-    "nvrf_id": "suffix_2",
+    "nvrf_id": "prev_suffix",
     "name": "Name Before Legally Changed: Suffix",
     "label": "Suffix",
     "help_text": false,
@@ -541,7 +541,7 @@
   {
     "uuid": "34d2669a-d30b-4001-b897-280fe71b3cb0",
     "lang": "en",
-    "nvrf_id": "title_2",
+    "nvrf_id": "prev_title",
     "name": "Name Before Legally Changed: Title",
     "label": "Title",
     "help_text": false,
@@ -584,7 +584,7 @@
   {
     "uuid": "2d61b54a-e568-410f-825a-0ca82dfd3f63",
     "lang": "en",
-    "nvrf_id": "telephone_number",
+    "nvrf_id": "phone_number",
     "name": "Phone Number",
     "label": "Phone number",
     "help_text": "(123) 456-7890",
@@ -597,7 +597,7 @@
   {
     "uuid": "c8e2ff17-fb1f-4971-a664-ffbb557b305a",
     "lang": "en",
-    "nvrf_id": "prev_apt_lot_number",
+    "nvrf_id": "prev_apt_number",
     "name": "Previous Home Address: Apt or Lot#",
     "label": "Apartment or lot#",
     "help_text": false,
@@ -636,7 +636,7 @@
   {
     "uuid": "c037a3ea-86b7-4661-ad28-c7228f1e682b",
     "lang": "en",
-    "nvrf_id": "prev_address",
+    "nvrf_id": "prev_street_address",
     "name": "Previous Home Address: Street Address",
     "label": "Street address",
     "help_text": false,

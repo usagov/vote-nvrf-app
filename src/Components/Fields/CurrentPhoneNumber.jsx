@@ -10,7 +10,7 @@ function CurrentPhoneNumber(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'phone_number',
+      id: field.nvrf_id,
       dataTest: 'phoneNumber',
       required: stateField.required,
       label: field.label,

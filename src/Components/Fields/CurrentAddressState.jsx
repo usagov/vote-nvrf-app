@@ -11,7 +11,7 @@ function CurrentAddressState(props) {
   return (
     <FieldContainer
       fieldType={'select'} inputData={{
-      id: 'state',
+      id: field.nvrf_id,
       dataTest: 'select',
       required: stateField.required,
       label: field.label,

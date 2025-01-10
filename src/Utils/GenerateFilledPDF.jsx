@@ -52,16 +52,16 @@ const GenerateFilledPDF = async function (btnType, formData, pagesKept) {
   eighteenYearsOld.select('yes');
 
   //Current Name
-  if (formData.title) {
-    title.select(formData.title);
+  if (formData.current_title) {
+    title.select(formData.current_title);
   }
-  firstName.setText(formData.first_name);
-  middleNames.setText(formData.middle_name);
-  lastName.setText(formData.last_name);
+  firstName.setText(formData.current_first_name);
+  middleNames.setText(formData.current_middle_names);
+  lastName.setText(formData.current_last_name);
 
   //Current suffix
-  if (formData.suffix) {
-    suffix.select(formData.suffix);
+  if (formData.current_suffix) {
+    suffix.select(formData.current_suffix);
   }
 
   //Previous Name
@@ -69,7 +69,7 @@ const GenerateFilledPDF = async function (btnType, formData, pagesKept) {
     title2.select(formData.prev_title);
   }
   firstName2.setText(formData.prev_first_name);
-  middleNames2.setText(formData.prev_middle_name);
+  middleNames2.setText(formData.prev_middle_names);
   lastName2.setText(formData.prev_last_name);
 
   //Previous suffix
@@ -88,33 +88,33 @@ const GenerateFilledPDF = async function (btnType, formData, pagesKept) {
   // adjusting font size
   dobYear.setFontSize(5)
   phoneNumber.setText(formData.phone_number);
-  race.setText(formData.race);
+  race.setText(formData.race_ethnic_group);
 
   //(2) Addresses
   //Home
-  const currentAddress = formData.street_address + formData.apt_num + formData.city + formData.zip_code;
+  const currentAddress = formData.current_street_address + formData.current_apt_number + formData.current_city + formData.current_zip_code;
   //check if anything other than default state selection is filled out
   if (currentAddress) {
-    homeAddress.setText(formData.street_address);
-    aptNumber.setText(formData.apt_num);
-    city.setText(formData.city);
-    state.setText(formData.state);
-    zipcode.setText(formData.zip_code);
+    homeAddress.setText(formData.current_street_address);
+    aptNumber.setText(formData.current_apt_number);
+    city.setText(formData.current_city);
+    state.setText(formData.current_state);
+    zipcode.setText(formData.current_zip_code);
   }
 
   //Mail
-  mailAddress.setText(`${formData.mail_street_address} ${formData.mail_apt_num}`);
+  mailAddress.setText(`${formData.mail_street_address} ${formData.mail_apt_number}`);
   mailCity.setText(formData.mail_city);
   mailState.setText(formData.mail_state);
   mailZipcode.setText(formData.mail_zip_code);
   //Previous
   //Maine override
-  if ((formData.state == 'Maine') && (formData.prev_street_address == '')) {
+  if ((formData.current_state == 'Maine') && (formData.prev_street_address == '')) {
     prevAddress.setText('N/A');
   } else {
     prevAddress.setText(formData.prev_street_address);
   }
-  prevAptNumber.setText(formData.prev_apt_num);
+  prevAptNumber.setText(formData.prev_apt_number);
   prevCity.setText(formData.prev_city);
   prevState.setText(formData.prev_state);
   prevZipcode.setText(formData.prev_zip_code);

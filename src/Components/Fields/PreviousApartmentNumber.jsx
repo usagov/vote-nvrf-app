@@ -10,7 +10,7 @@ function PreviousApartmentNumber(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'prev_apt_num',
+      id: field.nvrf_id,
       dataTest: 'prevAptNumber',
       required: stateField.required,
       label: field.label,

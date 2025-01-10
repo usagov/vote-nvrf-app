@@ -10,7 +10,7 @@ function PoliticalPartyInput(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'party_choice',
+      id: field.nvrf_id,
       dataTest: 'politicalParty',
       required: stateField.required,
       label: field.label,

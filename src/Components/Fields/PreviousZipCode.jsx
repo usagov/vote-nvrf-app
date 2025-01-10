@@ -10,7 +10,7 @@ function PreviousZipCode(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'prev_zip_code',
+      id: field.nvrf_id,
       dataTest: 'prevZip',
       required: stateField.required,
       label: field.label,

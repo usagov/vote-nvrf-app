@@ -10,7 +10,7 @@ function SSNFull(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'ssn_number',
+      id: field.nvrf_id,
       dataTest: 'ssn',
       label: field.label,
       required: stateField.required,

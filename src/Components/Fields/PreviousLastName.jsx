@@ -10,7 +10,7 @@ function PreviousLastName(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'prev_last_name',
+      id: field.nvrf_id,
       dataTest: 'prevLastName',
       required: stateField.required,
       label: field.label,

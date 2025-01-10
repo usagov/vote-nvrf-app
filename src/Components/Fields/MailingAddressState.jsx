@@ -11,12 +11,12 @@ function MailingAddressState(props) {
   return (
     <FieldContainer
       fieldType={'select'} inputData={{
-      id: 'mail_state',
+      id: field.nvrf_id,
       dataTest: 'select',
       required: stateField.required,
       label: field.label,
       options: options,
-      value: props.fieldData['mail_state'],
+      value: props.fieldData[field.nvrf_id],
       error_msg: field.error_msg,
       help_text: field.help_text,
     }} saveFieldData={props.saveFieldData} fieldData={props.fieldData}

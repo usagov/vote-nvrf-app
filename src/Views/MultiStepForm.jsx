@@ -37,33 +37,33 @@ function MultiStepForm(props) {
   }
   //Field data controls
   const [fieldData, setFieldData] = useState({
-    title: '',
-    first_name: '',
-    middle_name: '',
-    last_name: '',
-    suffix: '',
+    current_title: '',
+    current_first_name: '',
+    current_middle_names: '',
+    current_last_name: '',
+    current_suffix: '',
     prev_title: '',
     prev_first_name: '',
-    prev_middle_name: '',
+    prev_middle_names: '',
     prev_last_name: '',
     prev_suffix: '',
     date_of_birth_month: '',
     date_of_birth_day: '',
     date_of_birth_year: '',
     phone_number: '',
-    race: '',
-    street_address: '',
-    apt_num: '',
-    city: '',
-    state: '',
-    zip_code: '',
+    race_ethnic_group: '',
+    current_street_address: '',
+    current_apt_number: '',
+    current_city: '',
+    current_state: '',
+    current_zip_code: '',
     prev_street_address: '',
-    prev_apt_num: '',
+    prev_apt_number: '',
     prev_city: '',
     prev_state: '',
     prev_zip_code: '',
     mail_street_address: '',
-    mail_apt_num: '',
+    mail_apt_number: '',
     mail_city: '',
     mail_state: '',
     mail_zip_code: '',
@@ -167,7 +167,7 @@ function MultiStepForm(props) {
       ...fieldData,
       prev_title: '',
       prev_first_name: '',
-      prev_middle_name: '',
+      prev_middle_names: '',
       prev_last_name: '',
       prev_suffix: '',
     })
@@ -181,7 +181,7 @@ function MultiStepForm(props) {
     !e.target.checked && setFieldData({
       ...fieldData,
       mail_street_address: '',
-      mail_apt_num: '',
+      mail_apt_number: '',
       mail_city: '',
       mail_state: '',
       mail_zip_code: ''
@@ -192,7 +192,7 @@ function MultiStepForm(props) {
     setHasNoAddress(e.target.checked);
     setFieldData({
       ...fieldData,
-      street_address: '', apt_num: '', city: '', state: '', zip_code: ''
+      current_street_address: '', current_apt_number: '', current_city: '', current_state: '', current_zip_code: ''
     })
 
     if (!e.target.checked && document.getElementById("alt-mail-addr")) {
@@ -200,7 +200,7 @@ function MultiStepForm(props) {
         setFieldData({
           ...fieldData,
           mail_street_address: '',
-          mail_apt_num: '',
+          mail_apt_number: '',
           mail_city: '',
           mail_state: '',
           mail_zip_code: ''
@@ -215,7 +215,7 @@ function MultiStepForm(props) {
     !e.target.checked && setFieldData({
       ...fieldData,
       prev_street_address: '',
-      prev_apt_num: '',
+      prev_apt_number: '',
       prev_city: '',
       prev_state: '',
       prev_zip_code: ''

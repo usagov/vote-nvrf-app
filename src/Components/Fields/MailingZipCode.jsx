@@ -10,7 +10,7 @@ function MailingZipCode(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'mail_zip_code',
+      id: field.nvrf_id,
       dataTest: 'mailZip',
       required: stateField.required,
       label: field.label,

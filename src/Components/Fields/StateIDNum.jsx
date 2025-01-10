@@ -10,7 +10,7 @@ function StateIDNum(props) {
   return (
     <FieldContainer
       fieldType={'text'} inputData={{
-      id: 'id_number',
+      id: field.nvrf_id,
       dataTest: 'stateId',
       label: field.label,
       required: stateField.required,
